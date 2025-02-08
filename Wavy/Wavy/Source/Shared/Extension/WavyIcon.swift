@@ -14,7 +14,23 @@ enum WavyIcon: String {
     
     case human = "Human"
     case lock = "Lock"
-    case home = "Home"
+    case home = "HomeIcon"
+    
+    case homeIcon = "Home"
+    case searchIcon = "Search"
+    case writeIcon = "Write"
+    case myIcon = "My"
+    case mapIcon = "Map"
+    
+    case clickHome = "ClickHome"
+    case clickSearch = "ClickSearch"
+    case clickWrite = "ClickWrite"
+    case clickMy = "ClickMy"
+    case clickmap = "ClickMap"
+    
+    case searching = "Searching"
+    case healing = "Healing"
+    case healing1 = "Healing1"
 }
 
 extension Image {

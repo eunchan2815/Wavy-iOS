@@ -9,10 +9,23 @@ import SwiftUI
 
 @main
 struct WavyApp: App {
+    @State private var isActive = false
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                LoginView()
+                if isActive {
+//                    LoginView()
+                    RootView()
+                } else {
+                    AppFirstView()
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        isActive = true
+                    }
+                }
             }
         }
     }
