@@ -31,6 +31,11 @@ enum WavyIcon: String {
     case searching = "Searching"
     case healing = "Healing"
     case healing1 = "Healing1"
+    
+    case writeBackground = "WriteBackground"
+    
+    case star = "Star"
+    case clickStar = "ClickStar"
 }
 
 extension Image {

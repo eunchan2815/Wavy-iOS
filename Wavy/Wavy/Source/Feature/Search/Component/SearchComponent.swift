@@ -13,7 +13,7 @@ struct SearchComponent: View {
     @Binding var inputText: String
     let action: () -> Void
 
-    let columns = [GridItem(.adaptive(minimum: 70), spacing: 10)]
+    let columns = [GridItem(.adaptive(minimum: 90), spacing: 10)]
 
     var body: some View {
         VStack(alignment: .leading) {
