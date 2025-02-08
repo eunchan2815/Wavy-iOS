@@ -24,7 +24,6 @@ public struct WavyTabView<Content: View>: View {
     public var body: some View {
         VStack(spacing: 0) {
             content
-                .padding(.bottom, 120)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea(edges: .top)
             

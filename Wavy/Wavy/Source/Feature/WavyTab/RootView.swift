@@ -24,6 +24,7 @@ struct RootView: View {
                 MyView()
             }
         }
+        .padding(.top)
     }
 }
 
