@@ -21,9 +21,10 @@ struct RootView: View {
             case .map:
                 MapView()
             case .my:
-                MyView()
+                WavyView()
             }
         }
+        .navigationBarBackButtonHidden()
         .padding(.top)
     }
 }

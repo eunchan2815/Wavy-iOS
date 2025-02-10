@@ -14,8 +14,8 @@ struct WavyApp: App {
         WindowGroup {
             NavigationStack {
                 if isActive {
-//                    LoginView()
-                    RootView()
+                    LoginView()
+//                    RootView()
                 } else {
                     AppFirstView()
                 }

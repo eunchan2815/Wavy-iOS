@@ -23,7 +23,6 @@ struct GetUserHomeInfo: View {
             .padding(.leading, 30)
             
             VStack {
-                WavyTextField(image: .home, text: "거주지", posttext: $email)
                 HStack {
                     Image(icon: .human)
                         .resizable()
@@ -53,10 +52,12 @@ struct GetUserHomeInfo: View {
                         .stroke(selectedGender.isEmpty ? Color.init(uiColor: .systemGray4) : Color.field , lineWidth: 1)
                 )
                 .padding(.vertical, 2)
+                
+                WavyTextField(image: .home, text: "거주지", posttext: $email)
             }
             .padding(.top, 60)
             
-            WavyNextButton(destination: LoginView(), bool: email.isEmpty || password.isEmpty)
+            WavyNextButton(destination: LoginView(), bool: email.isEmpty)
                 .padding(.top, 70)
         }
         Spacer()

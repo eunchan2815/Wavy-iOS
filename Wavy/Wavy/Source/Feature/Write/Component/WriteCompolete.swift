@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct WriteCompolete: View {
-        let action: () -> Void
+    let action: () -> Void
+    let bool : Bool
     var body: some View {
         Button {
             action()
         } label: {
             RoundedRectangle(cornerRadius: 16)
-                .fill(.main)
+                .fill(bool ? .field : Color.init(uiColor: .systemGray4))
                 .frame(width: 314, height: 50)
                 .overlay {
                     Text("작성완료")

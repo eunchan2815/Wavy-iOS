@@ -125,7 +125,9 @@ struct WriteView: View {
                         .padding(.bottom, 30)
                         
                         Spacer()
-                        WriteCompolete { }
+                        WriteCompolete(action: {
+                            
+                        }, bool: date.isEmpty)
                     }
                 }
                 Spacer()
